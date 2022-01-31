@@ -15,7 +15,7 @@ terraform {
   }
 }
 
-resource "aws_instance" "test" {
-  ami = "ami-01f87c43e618bf8f0"
-  instance_type = "t2.micro"
+resource "aws_instance" "ubuntu" {
+  ami = var.ami
+  instance_type = var.instance_type
 }
