@@ -3,7 +3,6 @@ provider "aws" {
   profile = "default"
 }
 
-
 terraform {
   required_version = ">= 1.0"
 
@@ -13,9 +12,4 @@ terraform {
       version = ">= 3.55.0"
     }
   }
-}
-
-resource "aws_instance" "ubuntu" {
-  ami = var.ami
-  instance_type = var.instance_type
 }
